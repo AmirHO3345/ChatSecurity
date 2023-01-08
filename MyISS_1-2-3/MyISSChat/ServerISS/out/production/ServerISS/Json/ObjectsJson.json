@@ -1,0 +1,66 @@
+
+{
+  "PublicKeyResponse" : "String",
+  "ErrorMessage" : {
+    "Message" : "String"
+  },
+  "SignInRequest" : {
+    "Phone" : "Number" ,
+    "Password" : "String",
+    "SessionKey" : "Session" ,
+    "ParameterIV" : "IV"
+  } ,
+  "SignUpRequest" : {
+    "UserName" : "string" ,
+    "Phone" : "number" ,
+    "Password" : "String",
+    "SessionKey" : "Session" ,
+    "ParameterIV" : "IV"
+  } ,
+  "SignInResponse" : {
+    "UserID" : "number" ,
+    "UserName" : "String"
+  },
+  "SignUpResponse" : {
+    "UserID" : "number"
+  } ,
+  "SendMessageRequest" : {
+    "SenderID" : "Number" ,
+    "PhoneTarget" : "Number" ,
+    "Message" : "String"
+  } ,
+  "SendMessageResponse" : {
+    "Message" : "String"
+  } ,
+  "MessageArrived" : {
+    "SenderPhone" : "Number" ,
+    "SenderUserName" : "String" ,
+    "MessageSender" : "String"
+  } ,
+  "GetUsersRequest" : {
+    "ID" : "Number"
+  } ,
+  "GetUsersResponse" : {
+    "AllUsers" : "Array of Json"
+  } ,
+  "GetMessagesRequest" : {
+    "UserID" : "number" ,
+    "PhoneWanted" : "number"
+  } ,
+  "GetMessagesResponse" : {
+    "AllMessages" : "Array of Json"
+  } ,
+  "MessageChannelRequest" : {
+    "ID" : "number"
+  } ,
+  "MessageChannelResponse" : {
+    "Message" : "number"
+  },
+  "EncryptionData" : {
+    "HMac" : "String" ,
+    "Data" : "String"
+  },
+  "UnknownResponse" : {
+    "Message" : "String"
+  }
+}

@@ -1,0 +1,99 @@
+
+{
+  "CertificateClientResponse" : {
+    "ClientCertificate" : "String"
+  },
+  "PublicCARequest" : "String" ,
+  "PublicCAResponse" : "String" ,
+  "ErrorMessage" : {
+    "Message" : "String"
+  },
+  "SignInRequest" : {
+    "Phone" : "Number" ,
+    "Password" : "String",
+    "SessionKey" : "Session" ,
+    "ParameterIV" : "IV"
+  } ,
+  "SignUpRequest" : {
+    "UserName" : "string" ,
+    "Phone" : "number" ,
+    "Password" : "String",
+    "SessionKey" : "Session" ,
+    "ParameterIV" : "IV"
+  } ,
+  "SignInResponse" : {
+    "UserID" : "number" ,
+    "UserName" : "String" ,
+    "PublicKey" : "String" ,
+    "PrivateKey" : "String"
+  },
+  "SignUpResponse" : {
+    "UserID" : "number"
+  } ,
+  "SetKeysRequest" : {
+    "UserID" : "Number",
+    "PublicKey" : "String" ,
+    "PrivateKey" : "String"
+  },
+  "SetKeysResponse" : "String" ,
+  "SendMessageRequest" : {
+    "SenderID" : "Number" ,
+    "PhoneTarget" : "Number" ,
+    "Message" : "String"
+  } ,
+  "SendMessageResponse" : {
+    "Message" : "String"
+  } ,
+  "MessageArrived" : {
+    "SenderPhone" : "Number" ,
+    "SenderUserName" : "String" ,
+    "MessageSender" : "String"
+  } ,
+  "SendSession2ReceiverRequest" : {
+    "PhoneSender" : "Number" ,
+    "PhoneReceiver" : "Number" ,
+    "Data" : "String Encrypt"
+  },
+  "SendSession2ReceiverResponse" : {
+    "Data" : "String"
+  },
+  "ReceiveSessionFromSender" : {
+    "SenderName" : "String" ,
+    "SenderPhone" : "Number" ,
+    "Data" : "String Encrypt"
+  },
+  "CertificateReceiverRequest" : {
+    "PhoneTarget" : "Number"
+  },
+  "CertificateReceiverResponse" : {
+    "UserName" : "String" ,
+    "Certificate" : "String"
+  },
+  "GetUsersRequest" : {
+    "ID" : "Number"
+  } ,
+  "GetUsersResponse" : {
+    "AllUsers" : "Array of Json"
+  } ,
+  "GetMessagesRequest" : {
+    "UserID" : "number" ,
+    "PhoneWanted" : "number"
+  } ,
+  "GetMessagesResponse" : {
+    "AllMessages" : "Array of Json"
+  } ,
+  "CertificateRequest" : {
+    "CSRServer" : "String" ,
+    "CSRClient" : "String"
+  },
+  "CertificateResponse" : {
+    "Certificate" : "String"
+  },
+  "EncryptionData" : {
+    "DigitalSignature" : "String" ,
+    "Data" : "String"
+  },
+  "UnknownResponse" : {
+    "Message" : "String"
+  }
+}
